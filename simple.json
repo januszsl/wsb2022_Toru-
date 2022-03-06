@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.4.1272.37030",
+      "templateHash": "3122364188272188554"
+    }
+  },
+  "parameters": {
+    "username": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "username2": "[format('{0}-2', parameters('username'))]"
+  },
+  "resources": [],
+  "outputs": {
+    "user": {
+      "type": "string",
+      "value": "[parameters('username')]"
+    },
+    "user2": {
+      "type": "string",
+      "value": "[variables('username2')]"
+    }
+  }
+}
